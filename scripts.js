@@ -39,7 +39,7 @@ function convertValues() {
     if (CurrencySelect.value == "bitcoin") {
         //currencyValueConverted.innerHTML = convertedValue //modifica o valor do texto pelo valor calculado
 
-        currencyValueConverted.innerHTML = new Intl.NumberFormat('de-DE',
+        currencyValueConverted.innerHTML = new Intl.NumberFormat('en-DE',
             { style: 'currency', currency: 'BTC' }).format(inputValue / bitcoinToday)
     }
 
